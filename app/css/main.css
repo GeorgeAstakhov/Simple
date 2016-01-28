@@ -216,12 +216,16 @@ body {
 	width: 650px;
 }
 
-.about {
+.about, .feedback {
 	margin: 0 0 25px;
 	padding: 22px 0;
 	width: 100%;
 	background-color: #eff3f7;
 	border-radius: 3px;
+}
+
+.feedback {
+	padding: 0;
 }
 
 .about .name {
@@ -234,6 +238,24 @@ body {
 	line-height: 1.0;
 	border-bottom: solid 2px #3ba8c0;
 	display: inline-block;
+}
+
+.feedback .name_feedback {
+	margin: 0 0 50px;
+	padding:  44px 20px;
+	display: block;
+	width: 100%;
+	height: 121px;
+	background-color: #48cbe8;
+	border: none;
+	border-bottom: solid 17px #67dffa;
+	text-align: center;
+	color: #fff;
+	font-size: 27px;
+	line-height: 1.2;
+	font-weight: normal;
+	font-family: 'fira_sansbook';
+	box-sizing: border-box;
 }
 
 .about .about_photo {
@@ -253,10 +275,6 @@ body {
 .about .about_photo img {
 	width: 100%;
 	height: 100%;
-	border-radius: 50%;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-khtml-border-radius: 50%;
 	vertical-align: middle;
 }
 
@@ -583,4 +601,11 @@ body {
 
 .clearfix:after {
 	clear:both;
+}
+
+.feedback_form {
+	margin: 0 auto 197px;
+	padding: 0;
+	display: block;
+	width: 402px;
 }
