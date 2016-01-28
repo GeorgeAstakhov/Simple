@@ -1,0 +1,10 @@
+{
+  "name": "dz1.local",
+  "dependencies": {
+    "jquery": "1.8",
+    "normalize-css": "normalize.css#~3.0.3",
+    "modernizr": "2.8.3",
+    "html5shiv": "~3.7.3",
+    "css3pie": "*"
+  }
+}

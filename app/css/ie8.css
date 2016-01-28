@@ -1,0 +1,39 @@
+.social .social_link {
+	width: 49px;
+	height: 49px;
+
+}
+
+.social .social_link.vk {
+	background-position: 0 -49px;
+}	
+
+.social .social_link.fb {
+	background-position: -98px -49px;
+}	
+
+.social .social_link.git {
+	background-position: -49px -49px;
+}	
+
+.social .social_link.tw {
+	background-position: -147px -49px;
+}
+
+.social .social_link.vk:hover {
+	background-position: 0 0;
+}	
+
+.social .social_link.fb:hover {
+	background-position: -98px 0;
+}	
+
+.social .social_link.git:hover {
+	background-position: -49px 0;
+}	
+
+.social .social_link.tw:hover {
+	background-position: -147px 0;
+}
+
+	
