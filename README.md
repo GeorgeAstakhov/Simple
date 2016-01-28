@@ -1,5 +1,4 @@
-project 'HomeWork01'
-to install:
+### To install application just do it:
 1. git clone https://github.com/GeorgeAstakhov/HomeWork1.git somedir
 2. cd somedir
 3. npm i
