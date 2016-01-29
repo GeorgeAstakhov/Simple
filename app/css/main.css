@@ -19,6 +19,7 @@ body {
 }
 
 .header {
+	margin-bottom: 40px;
 	width: 100%;
 	height: 119px;
 	background: #eff3f7;
@@ -34,9 +35,17 @@ body {
 
 .header_content .logo {
 	margin: 39px 0 0 0;
+	padding: 0;
+	display: block;
+	width: 243px;
+	height: 42px;
 	text-decoration: none;
 	outline: none;
 	float: left;
+}
+
+.header_content .logo_img {
+	width: 100%;
 }
 
 .header_content .social_nav {
@@ -45,13 +54,14 @@ body {
 }
 
 .social {
+	margin: 0 0 0 24px;
 	display: block;
 	list-style: none;
 	float: left;
 }
 
 .social .social_link {
-	margin: 0 0 0 24px;
+	margin: 0;
 	padding: 0;
 	text-decoration: none;
 	width: 49px;
@@ -98,7 +108,7 @@ body {
 
 .content {
 	margin: 0 auto;
-	padding: 40px 0 0 0;
+	padding: 0;
 	width: 960px;
 }
 
@@ -136,17 +146,16 @@ body {
 
 .main_menu .item .link {
 	margin: 0;
-	padding: 25px 10px 19px 28px;
+	padding: 25px 20px 19px 28px;
 	border: none;
 	display: block;
-	min-height: 77px;
+	min-height: 33px;
 	text-decoration: none;
 	font-family: 'fira_sansbook';
 	font-size: 21px;
-	line-height: 1.2;
+	line-height: 1.1;
 	color: #959aa8;
 	word-wrap: break-word;
-	box-sizing: border-box;
 	position: relative;
 }
 
@@ -186,14 +195,13 @@ body {
 	margin: 0;
 	padding: 8px 30px 5px 82px;
 	display: block;
-	min-height: 40px;
+	min-height: 27px;
 	text-decoration: none;
 	font-family: 'fira_sansbook';
 	font-size: 17px;
 	line-height: 1.4;
 	color: #fff;
 	word-wrap: break-word;
-	box-sizing: border-box;
 	background-repeat: no-repeat;
 	background-position: 42px center;
 }
@@ -240,14 +248,10 @@ body {
 
 .about, .feedback {
 	margin: 0 0 25px;
-	padding: 22px 0;
+	padding: 0 0 22px;
 	width: 100%;
 	background-color: #eff3f7;
 	border-radius: 3px;
-}
-
-.feedback {
-	padding: 0;
 }
 
 .about .name {
@@ -255,11 +259,14 @@ body {
 	font-family: 'fira_sansbook';
 	font-size: 27px;
 	font-weight: normal;
-	padding: 0 23px 17px 23px;
+	padding: 22px 23px 17px 23px;
 	margin: 0 0 20px;
 	line-height: 1.0;
 	border-bottom: solid 2px #3ba8c0;
 	display: inline-block;
+	word-wrap: break-word;
+	max-width: 100%;
+	box-sizing: border-box;
 }
 
 .feedback .name_feedback {
@@ -318,21 +325,22 @@ body {
 }
 
 .about .works_list {
-	padding: 27px 20px;
+	padding: 27px 0;
+	margin-left: -5px;
 
 }
 
-.works_list .works_element {
-	margin: 0 27px 20px 0;
+.works_list .works_element {	
+	margin: 0 0 20px 27px;
 	list-style: none;
 	display: inline-block;
-	float: left;
 	width: 182px;
 	min-height: 226px;
+	vertical-align: top;
 }
 
-.works_list .works_element:nth-child(3n) {
-	margin-right: 0;
+.works_element.add_element {
+	min-height: 129px;
 }
 
 .works_element .hover_works_element {
@@ -382,13 +390,16 @@ body {
 
 .hover_wrapper_works_element {
 	margin: 0;
-	display: none;
+	display: block;
 	background-color: #016ca4;
 	opacity: 0.75;
 	width: 100%;
 	height: 100%;
 	position: absolute;
+	text-decoration: none;
 	z-index: 2;
+	text-align: center;
+	vertical-align: middle;
 }
 
 .hover_link_work_element {
@@ -400,13 +411,6 @@ body {
 	text-decoration: none;
 	color: #fff;
 	font: normal 12px/1.2 fira_sansbook,sans-serif;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	-webkit-transform: translate(-50%,-50%);
-	-o-transform: translate(-50%,-50%);
-	-ms-transform: translate(-50%,-50%);
 }
 
 .hover_works_element:hover .hover_wrapper_works_element  {
@@ -414,20 +418,31 @@ body {
 }
 
 .link_works_element {
-	padding: 12px 0;
+	margin: 0 auto;
+	padding: 12px 10px;
+	min-height: 15px;
+	width: 90%;
 	display: block;
 	text-align: center;
 	text-decoration: none;
 	color: #3ba8c0;
 	font: normal 13px/1.2 fira_sanslight_italic,sans-serif;
+	word-wrap: break-word;
+}
+
+.link_works_element:hover {
+	text-decoration: underline;
 }
 
 .desc_works_element {
-	margin: 0;
+	margin: 0 auto;
+	display: inline-block;
+	width:96%;
 	padding: 0;
 	color: #4a545d;
 	text-align: center;
 	font: normal 15px/1.2 fira_sanslight,sans-serif;
+	word-wrap: break-word;
 }
 
 .login_enter {
@@ -463,12 +478,14 @@ body {
 	list-style: none;
 	font-family: 'fira_sansbook';
 	font-size: 15px;
+	line-height: 1.2;
 	color: #37424d;
 }
 
 .main_info_item .question {
 	font-family: 'fira_sanssemibold';
-	font-size: 17px
+	font-size: 17px;
+	line-height: 1.2;
 }
 
 .main_info_item .question:after {
